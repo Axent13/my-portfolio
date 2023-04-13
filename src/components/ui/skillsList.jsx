@@ -59,10 +59,14 @@ const skills = [
 
 const SkillsList = () => {
   return (
-    <div>
+    <div className="flex justify-between w-[98%] mx-auto p-16 bg-slate-800 rounded-xl translate-y-1/2 shadow-xl">
       {skills.map((skill) => (
         <div key={skill.name}>
-          <img src={skill.image} alt={skill.name} />
+          <img
+            className="w-28 h-28 opacity-50"
+            src={skill.image}
+            alt={skill.name}
+          />
         </div>
       ))}
     </div>

@@ -1,8 +1,3 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="-10 -5 1034 1034" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-   <path fill="#000000"
-d="M499 228q-21 0 -36 15l-73 73l92 92q17 -6 34 -2t29.5 16.5t16 29.5t-1.5 34l88 88q17 -5 34 -1.5t30 16.5q18 18 18 43.5t-18 43t-43.5 17.5t-43.5 -17q-13 -14 -16.5 -32t3.5 -35l-83 -83v218q9 4 16 11q18 18 18 43.5t-18 43.5t-43.5 18t-43 -18t-17.5 -43.5t18 -43.5
-q8 -8 20 -13v-220q-12 -4 -20 -13q-14 -13 -17.5 -31.5t3.5 -35.5l-90 -91l-240 240q-15 15 -15 36.5t15 36.5l349 349q15 15 36.5 15t36.5 -15l348 -348q15 -15 15 -36.5t-15 -36.5l-349 -349q-15 -15 -37 -15z" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1034" height="1034" version="1.1" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+   
+<g class="currentLayer" style=""><title>Layer 1</title><path fill="#ffffff" d="M549,115.5 q-21,0 -36,15 l-73,73 l92,92 q17,-6 34,-2 t29.5,16.5 t16,29.5 t-1.5,34 l88,88 q17,-5 34,-1.5 t30,16.5 q18,18 18,43.5 t-18,43 t-43.5,17.5 t-43.5,-17 q-13,-14 -16.5,-32 t3.5,-35 l-83,-83 v218 q9,4 16,11 q18,18 18,43.5 t-18,43.5 t-43.5,18 t-43,-18 t-17.5,-43.5 t18,-43.5 q8,-8 20,-13 v-220 q-12,-4 -20,-13 q-14,-13 -17.5,-31.5 t3.5,-35.5 l-90,-91 l-240,240 q-15,15 -15,36.5 t15,36.5 l349,349 q15,15 36.5,15 t36.5,-15 l348,-348 q15,-15 15,-36.5 t-15,-36.5 l-349,-349 q-15,-15 -37,-15 z" id="svg_1" class="selected" fill-opacity="1"/></g></svg>

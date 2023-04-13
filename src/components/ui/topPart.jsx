@@ -3,7 +3,7 @@ import SkillsList from "./skillsList";
 
 const TopPart = () => {
   return (
-    <div>
+    <div className="px-44 py-36 bg-[url('src/assets/top-background.png')] bg-no-repeat bg-cover h-[45rem]">
       <AboutMe />
       <div>
         <SkillsList />

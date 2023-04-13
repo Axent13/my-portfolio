@@ -3,7 +3,7 @@ import TopPart from "./components/ui/topPart";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-slate-800">
       <TopPart />
     </div>
   );
