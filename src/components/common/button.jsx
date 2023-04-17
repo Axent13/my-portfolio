@@ -6,12 +6,9 @@ const Button = ({ text, href, isFilled = false, withGithubIcon = false }) => {
     <a
       className={
         "py-4 px-8 text-2xl uppercase text-gray-300 font-medium border-2 rounded flex items-center transition-colors" +
-        (withGithubIcon
-          ? " hover:bg-slate-500 hover:text-slate-200"
-          : " hover:bg-gray-300 hover:text-black") +
         (isFilled
           ? " bg-[#64644B] border-[#64644B] hover:border-[#a7a785] hover:bg-[#50503c] hover:text-[#c7c79f]"
-          : " border-gray-300")
+          : " border-gray-300 hover:bg-slate-600 hover:text-slate-50 ")
       }
       href={href}
     >
@@ -25,7 +22,7 @@ const Button = ({ text, href, isFilled = false, withGithubIcon = false }) => {
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
   isFilled: PropTypes.bool,
   withGithubIcon: PropTypes.bool,
 };

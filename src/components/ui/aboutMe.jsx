@@ -12,7 +12,7 @@ const AboutMe = () => {
         interfaces, websites and Fullstack Web Apps with React and NodeJS.
       </p>
       <div className="mt-8 flex items-center">
-        <Button text="Contact me" href={"#"} />
+        <Button text="Contact me" href={"#contact-form"} />
         <a
           href="https://github.com/Axent13"
           className="ml-6 transition-transform hover:-translate-y-1"

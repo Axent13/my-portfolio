@@ -5,7 +5,7 @@ const ProjectsList = ({ projects }) => {
   let isEven = true;
 
   return (
-    <div className="pt-72">
+    <div className="py-72">
       <h2 className="uppercase text-slate-300 text-5xl text-center">
         Last <span className="border-b-4 border-[#64644B]">Projects</span>
       </h2>
