@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { validator } from "../../utils/validator";
 import TextField from "../common/textField";
 import TextAreaField from "../common/textAreaField";
+import telegramService from "../../services/telegram.service";
 
 const ContactMeForm = () => {
   const [data, setData] = useState({});
@@ -48,12 +49,16 @@ const ContactMeForm = () => {
 
   const isValid = Object.keys(errors).length === 0;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const isValid = validate();
     if (!isValid) return;
 
-    console.log(data);
+    console.log("Trying to send data:", data);
+
+    const { content } = await telegramService.sendMessage(data);
+
+    console.log("content from POST:", content);
   };
 
   return (
