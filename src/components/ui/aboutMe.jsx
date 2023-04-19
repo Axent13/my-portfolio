@@ -5,8 +5,10 @@ import telegramIcon from "../../assets/telegram.svg";
 const AboutMe = () => {
   return (
     <div>
-      <p className="text-8xl text-gray-300">Mihail Silaev</p>
-      <p className="text-5xl my-4 text-gray-300">Frontend web developer</p>
+      <p className="text-7xl md:text-8xl text-gray-300">Mihail Silaev</p>
+      <p className="text-3xl md:text-5xl my-4 text-gray-300">
+        Frontend web developer
+      </p>
       <p className="text-2xl text-gray-300 max-w-5xl">
         Hello! Glad to see you here! My name is Mihail. I create user
         interfaces, websites and Fullstack Web Apps with React and NodeJS.

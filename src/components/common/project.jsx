@@ -12,17 +12,17 @@ const Project = ({
   return (
     <div
       className={
-        "mt-44 flex items-center justify-between" +
+        "mt-16 mb-28 md:mt-44 px-8 flex flex-col md:flex-row items-center justify-between" +
         (isEven ? " flex-row-reverse" : "")
       }
     >
-      <div className="w-[50%]">
+      <div className="w-full max-w-2xl md:w-[50%]">
         <img className="rounded-lg" src={imageSrc} alt={name} />
       </div>
-      <div className="max-w-[40%]">
-        <h3 className="text-slate-300 text-4xl">{name}</h3>
+      <div className="w-full max-w-2xl md:max-w-[40%]">
+        <h3 className="text-slate-300 text-4xl mt-4 md:mt-0">{name}</h3>
         <p className="text-slate-300 text-2xl mt-4">{description}</p>
-        <div className="mt-16 flex">
+        <div className="mt-6 md:mt-16 flex">
           {demoLink && (
             <div className="mr-4">
               <Button text="Demo" href={demoLink} isFilled={true} />

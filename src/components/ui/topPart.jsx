@@ -1,13 +1,8 @@
 import AboutMe from "./aboutMe";
-import SkillsList from "./skillsList";
-
 const TopPart = () => {
   return (
-    <div className="px-44 py-36 bg-[url('src/assets/top-background.png')] bg-no-repeat bg-cover h-[45rem]">
+    <div className="px-12 sm:px-20 md:px-[6.5rem] lg:px-44 py-36 bg-[url('src/assets/top-background.png')] bg-no-repeat bg-cover md:h-[45rem]">
       <AboutMe />
-      <div>
-        <SkillsList />
-      </div>
     </div>
   );
 };

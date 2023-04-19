@@ -7,7 +7,7 @@ const projectsInfo = [
   {
     name: "Riksha food order",
     description:
-      "Food order SPA made with React 18, Redux Toolkit, Router 6 and MongoDB",
+      "Food order SPA made with React 18, Redux Toolkit, Router 6, NodeJS and MongoDB",
     demoLink: null,
     codeLink: "https://github.com/Axent13/riksha-food-order",
     imageSrc: rikshaImage,
@@ -15,7 +15,7 @@ const projectsInfo = [
   {
     name: "Fast Company",
     description:
-      "Prototype of Social Network for meetings. Made with React 18, Redux Toolkit, Router 6 and Firebase + MongoDB",
+      "Prototype of Social Network for meetings. Made with React 18, Redux Toolkit, Router 6, NodeJS and Firebase + MongoDB",
     demoLink: null,
     codeLink: "https://github.com/Axent13/fast-company",
     imageSrc: fastCompanyImage,
