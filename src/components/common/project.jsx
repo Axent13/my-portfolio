@@ -25,12 +25,22 @@ const Project = ({
         <div className="mt-6 md:mt-16 flex">
           {demoLink && (
             <div className="mr-4">
-              <Button text="Demo" href={demoLink} isFilled={true} />
+              <Button
+                text="Demo"
+                href={demoLink}
+                isFilled={true}
+                isExternalLink={true}
+              />
             </div>
           )}
           {codeLink && (
             <div>
-              <Button text="Code" href={codeLink} withGithubIcon={true} />
+              <Button
+                text="Code"
+                href={codeLink}
+                withGithubIcon={true}
+                isExternalLink={true}
+              />
             </div>
           )}
         </div>

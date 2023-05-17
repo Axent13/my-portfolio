@@ -18,12 +18,16 @@ const AboutMe = () => {
         <a
           href="https://github.com/Axent13"
           className="ml-6 transition-transform hover:-translate-y-1"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <img src={githubIcon} alt="Github link" className="w-14 h-14 mr-2" />
         </a>
         <a
           href="https://t.me/Axent1398"
           className="ml-3 transition-transform hover:-translate-y-1"
+          target="_blank"
+          rel="noreferrer noopener"
         >
           <img src={telegramIcon} alt="Telegram link" className="w-14 h-14" />
         </a>

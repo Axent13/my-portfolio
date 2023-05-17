@@ -8,7 +8,7 @@ const projectsInfo = [
     name: "Riksha food order",
     description:
       "Food order SPA made with React 18, Redux Toolkit, Router 6, NodeJS and MongoDB",
-    demoLink: null,
+    demoLink: "http://riksha.axent13.site/",
     codeLink: "https://github.com/Axent13/riksha-food-order",
     imageSrc: rikshaImage,
   },
@@ -32,8 +32,8 @@ const projectsInfo = [
     name: "Toxin Hotel",
     description:
       "Layout of the UI kit and layout pages of the Toxin Hotel. Made with Webpack, Pug, SCSS, jQuery with using BEM-metodology, Air-datepicker and Owl Carousel 2",
-    demoLink: "https://github.com/Axent13/toxin-hotel",
-    codeLink: "https://axent13.github.io/toxin-hotel/",
+    demoLink: "https://axent13.github.io/toxin-hotel/",
+    codeLink: "https://github.com/Axent13/toxin-hotel",
     imageSrc: toxinHotelImage,
   },
 ];

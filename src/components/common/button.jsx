@@ -1,7 +1,13 @@
 import PropTypes from "prop-types";
 import githubIcon from "../../assets/github.svg";
 
-const Button = ({ text, href, isFilled = false, withGithubIcon = false }) => {
+const Button = ({
+  text,
+  href,
+  isFilled = false,
+  withGithubIcon = false,
+  isExternalLink = false,
+}) => {
   return (
     <a
       className={
@@ -11,6 +17,8 @@ const Button = ({ text, href, isFilled = false, withGithubIcon = false }) => {
           : " border-gray-300 hover:bg-slate-600 hover:text-slate-50 ")
       }
       href={href}
+      target={isExternalLink ? "_blank" : ""}
+      rel="noreferrer noopener"
     >
       {withGithubIcon && (
         <img src={githubIcon} alt="Github link" className="w-8 h-8 mr-2" />
@@ -25,6 +33,7 @@ Button.propTypes = {
   href: PropTypes.string,
   isFilled: PropTypes.bool,
   withGithubIcon: PropTypes.bool,
+  isExternalLink: PropTypes.bool,
 };
 
 export default Button;
