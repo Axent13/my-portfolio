@@ -1,10 +1,11 @@
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { validator } from "../../utils/validator";
 import TextField from "../common/textField";
 import TextAreaField from "../common/textAreaField";
 import telegramService from "../../services/telegram.service";
 
-const ContactMeForm = () => {
+const ContactMeForm = ({ onClickFunction }) => {
   const initialState = {
     name: "",
     email: "",
@@ -61,11 +62,14 @@ const ContactMeForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     setSendButtonClicked(true);
+
     const isValid = validate();
     if (!isValid) return;
 
     const { content } = await telegramService.sendMessage(data);
+    onClickFunction();
     setData(initialState);
     setSendButtonClicked(false);
   };
@@ -107,6 +111,10 @@ const ContactMeForm = () => {
       </div>
     </form>
   );
+};
+
+ContactMeForm.propTypes = {
+  onClickFunction: PropTypes.func,
 };
 
 export default ContactMeForm;

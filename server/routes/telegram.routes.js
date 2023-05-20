@@ -21,9 +21,6 @@ router.post("/", async (req, res) => {
     http.post(
       `https://api.telegram.org/bot${config.telegramToken}/sendMessage?chat_id=${config.chatId}&parse_mode=html&text=${message}`,
       function (error, response, body) {
-        console.log("error:", error);
-        console.log("statusCode:", response && response.statusCode);
-        console.log("body:", body);
         if (response.statusCode === 200) {
           res
             .status(200)
