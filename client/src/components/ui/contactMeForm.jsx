@@ -5,7 +5,15 @@ import TextAreaField from "../common/textAreaField";
 import telegramService from "../../services/telegram.service";
 
 const ContactMeForm = () => {
-  const [data, setData] = useState({});
+  const initialState = {
+    name: "",
+    email: "",
+    message: "",
+  };
+
+  const [data, setData] = useState(initialState);
+
+  const [sendButtonClicked, setSendButtonClicked] = useState(false);
 
   const [errors, setErrors] = useState({});
 
@@ -38,7 +46,9 @@ const ContactMeForm = () => {
   };
 
   useEffect(() => {
-    validate();
+    if (sendButtonClicked) {
+      validate();
+    }
   }, [data]);
 
   const validate = () => {
@@ -51,14 +61,13 @@ const ContactMeForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setSendButtonClicked(true);
     const isValid = validate();
     if (!isValid) return;
 
-    console.log("Trying to send data:", data);
-
     const { content } = await telegramService.sendMessage(data);
-
-    console.log("content from POST:", content);
+    setData(initialState);
+    setSendButtonClicked(false);
   };
 
   return (
